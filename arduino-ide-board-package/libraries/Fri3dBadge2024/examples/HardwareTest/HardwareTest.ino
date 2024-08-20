@@ -4,7 +4,6 @@
 // - IRremoteESP8266 e.g. 2.8.6
 
 #include <Arduino.h>
-#include "Fri3dBadge_pins.h"
 #include <TFT_eSPI.h> // Library Dependency: `TFT_eSPI` by Bodmer v2.5.43
 #include <Wire.h>
 #include <SPI.h>
@@ -13,6 +12,7 @@
 #include <IRac.h>
 #include <SD.h>
 
+#include "Fri3dBadge_pins.h"
 #include "Fri3dBadge_Buzzer.h"
 #include "Fri3dBadge_Joystick.h"
 #include "Fri3dBadge_Button.h"
