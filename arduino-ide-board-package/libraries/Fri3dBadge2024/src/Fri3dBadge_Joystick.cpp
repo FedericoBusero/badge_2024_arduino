@@ -1,3 +1,4 @@
+#include "Fri3dBadge_pins.h"
 #include "Fri3dBadge_Joystick.h"
 
 Fri3dBadge_Joystick::Fri3dBadge_Joystick()
