@@ -1,4 +1,6 @@
-#include "Arduino.h"
+#include <Arduino.h>
+
+#include "Fri3dBadge_pins.h"
 #include "Fri3dBadge24_battery_monitor.h"
 
 uint16_t Battery::m_raw_min = 1400; //1375 measured min
