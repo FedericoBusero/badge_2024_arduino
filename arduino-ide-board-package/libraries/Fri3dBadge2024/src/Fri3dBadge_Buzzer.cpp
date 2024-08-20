@@ -1,5 +1,7 @@
+#include <Arduino.h>
+
+#include "Fri3dBadge_pins.h"
 #include "Fri3dBadge_Buzzer.h"
-#include "Arduino.h"
 
 Fri3dBadge_Buzzer::Fri3dBadge_Buzzer() {
   volume = 255;
