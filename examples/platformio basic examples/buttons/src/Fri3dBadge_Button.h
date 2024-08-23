@@ -1,8 +1,7 @@
-
 #ifndef FRI3DBADGE_BUTTON_H_INCLUDED
 #define FRI3DBADGE_BUTTON_H_INCLUDED
 
-// Based on 
+// Based on
 // Arduino Button Library
 // https://github.com/JChristensen/JC_Button
 // Copyright (C) 2018 by Jack Christensen and licensed under
@@ -31,13 +30,13 @@ class Fri3d_Button
         // puEnable true to enable the AVR internal pullup resistor (default true)
         // invert   true to interpret a low logic level as pressed (default true)
         Fri3d_Button(Fri3DButton_type buttontype, uint8_t pin, uint32_t dbTime=25, uint8_t mode=INPUT_PULLUP, uint8_t invert=true)
-        {
-             m_buttontype = buttontype;
-             m_pin = pin;
-             m_dbTime = dbTime;
-             m_mode = mode;
-             m_invert = invert;
-        }
+		{
+			m_buttontype = buttontype;
+			m_pin = pin;
+			m_dbTime = dbTime;
+			m_mode = mode;
+			m_invert = invert;
+		}
 
         // Initialize a Button object
         void begin();
@@ -80,14 +79,14 @@ class Fri3d_Button
 
         uint8_t m_pin;                  // arduino pin number connected to button
         uint32_t m_dbTime;              // debounce time (ms)
-        uint8_t m_mode;                 // pinMode mode 
+        uint8_t m_mode;                 // pinMode mode
         bool m_invert;                  // if true, interpret logic low as pressed, else interpret logic high as pressed
         bool m_state = false;           // current button state, true=pressed
         bool m_lastState = false;       // previous button state
         bool m_changed = false;         // state changed since last read
         uint32_t m_time = 0;            // time of current state (ms from millis)
         uint32_t m_lastChange = 0;      // time of last state change (ms)
-        Fri3DButton_type m_buttontype;  
+        Fri3DButton_type m_buttontype;
 };
 
 #endif
